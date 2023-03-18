@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 
 // comp imports
-import ViewBlock from "./components/viewBlock"
+import ViewBlock from "../components/viewBlock"
 
 export async function getServerSideProps(context) {
   let res = await fetch(`http://${context.req.headers.host}/api/getAllData`, {
